@@ -260,6 +260,10 @@ p .bold-color4 {
     gap: 10px ;
     
 }
+.skill-bar{
+    margin-bottom: 5px;
+}
+
 /* Contact section */
 .contact-info {
     display: grid;
