@@ -36,22 +36,23 @@
     </section>
 
     <!-- Projects -->
-    <section class="section">
+    <section id="project-container">
+      
       <h2 class="section-title"><span class="section-icon">🚀</span> Featured Projects</h2>
       
-      <div class="project">
-        <h3 class="project-title">studyShare</h3>
-        <p class="project-description">
-          A collaborative note-sharing platform built with PHP and MySQL. Features user authentication, real-time collaboration, and file attachments.
-        </p>
-        <div class="project-tech">
-          <span class="tech-tag">PHP</span>
-          <span class="tech-tag">MYSQL</span>
-          <span class="tech-tag">JAVASCRIPT</span>
+      
+        <!-- this is project template-->
+      <template id="project-template">
+        <div class="project">
+          <h3 class="project-title"></h3>
+          <p class="project-description"></p>
+          <div class="project-tech"></div>
+          <a  href="link-address" class="project-link" target="_blank">View Project →</a>
         </div>
-        <a href="#" class="project-link">View Project →</a>
-      </div>
-    <section class="skills">
+      </template>
+    </section>
+      
+    <section class="skills" id="skills">
       <h2 class="section-title" id="skill-section">
         skill and technology
         <!--Tab to edit-->
@@ -59,11 +60,39 @@
       <h3>
         Skill
       </h3>
-      <div class="skill-grid">
+      <div class="skill-grid" id="skills.grid">
         
       </div>
+      <div id="skills-container"></div>
+      
+    
+      <!-- Template -->
+      <template id="skill-template">
+        <div class="skill-bar">
+          <div class="skill-name">
+            <span>
+              <img class="skill-icon" src="" alt="" width="20">
+              <span class="skill-title"></span>
+            </span>
+            <span class="skill-percent"></span>
+          </div>
+    
+          <svg width="100%" height="10">
+            <defs>
+              <linearGradient id="gradient-skill" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#F78700" />
+                <stop offset="100%" stop-color="#FFBA68" />
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="10" rx="5" ry="5" fill="#eee" />
+            <rect class="skill-fill" x="0" y="0" height="10" rx="5" ry="5" fill="url(#gradient-skill)" />
+          </svg>
+        </div>
+      </template>
       
       
+      
+     <!-- hard coded skill
       <div class="skill-bar">
         <div class="skill-name">
           <span><img src="/asset/icon/blender.svg" alt="Blender" width="20"> Blender</span>
@@ -72,7 +101,7 @@
         
         
         
-        <svg width="100%" height="10">
+        <svg width="100%" height="10" id="blender">
             <defs>
               <linearGradient id="gradient-skill" x1="0%" y1="0%" x2="100%" y2="0%">
                 <stop offset="0%" stop-color="#F78700" />
@@ -80,182 +109,58 @@
               </linearGradient>
             </defs>
           
-          <!-- Background bar -->
           <rect x="0" y="0" width="100%" height="10" rx="5" ry="5" fill="#eee" />
-            <!-- Progress bar (change width for percentage) -->
+            
           <rect x="0" y="0" width="90%" height="10" rx="5" ry="5" fill="url(#gradient-skill)" />
         </svg>
         
       </div>
       
-            <div class="skill-bar">
-        <div class="skill-name">
-          <span><img src="/asset/icon/php.svg" alt="php" width="20">PHP </span>
-          <span>60%</span>
-        </div>
-        
-        
-        
-        <svg width="100%" height="10">
-            <defs>
-              <linearGradient id="php-bar" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#576490" />
-                <stop offset="100%" stop-color="#8a9fe0" />
-              </linearGradient>
-            </defs>
-          
-          <!-- Background bar -->
-          <rect x="0" y="0" width="100%" height="10" rx="5" ry="5" fill="#eee" />
-            <!-- Progress bar (change width for percentage) -->
-          <rect x="0" y="0" width="90%" height="10" rx="5" ry="5" fill="url(#php-bar)" />
-        </svg>
-        
-      </div>
-      
-            <div class="skill-bar">
-        <div class="skill-name">
-          <span><img src="/asset/icon/html.svg" alt="Blender" width="20"> HTML</span>
-          <span>60%</span>
-        </div>
-        
-        
-        
-        <svg width="100%" height="10">
-          <defs>
-            <linearGradient id="html-bar" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#FF5654" />
-              <stop offset="100%" stop-color="#FF7203" />
-            </linearGradient>
-          </defs>
-          
-          <!-- Background bar -->
-          <rect x="0" y="0" width="100%" height="10" rx="5" ry="5" fill="#eee" />
-          <!-- Progress bar (change width for percentage) -->
-          <rect x="0" y="0" width="90%" height="10" rx="5" ry="5" fill="url(#html-bar)" />
-        </svg>
-        
-      </div>
-      
-            <div class="skill-bar">
-        <div class="skill-name">
-          <span><img src="/asset/icon/mysql.svg" alt="mySQL" width="20"> MySQL</span>
-          <span>60%</span>
-        </div>
-        
-        
-        
-        <svg width="100%" height="10">
-          <defs>
-            <linearGradient id="mysql-bar" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#3d74ff" />
-              <stop offset="100%" stop-color="#2ea1ff" />
-            </linearGradient>
-          </defs>
-          
-          <!-- Background bar -->
-          <rect x="0" y="0" width="100%" height="10" rx="5" ry="5" fill="#eee" />
-          <!-- Progress bar (change width for percentage) -->
-          <rect x="0" y="0" width="90%" height="10" rx="5" ry="5" fill="url(#mysql-bar)" />
-        </svg>
-        
-      </div>
+       --> 
       
     </section>
 
 
     <!-- Contact -->
-    <section class="section" id="contact">
-      <h2 class="section-title"><span class="section-icon">📬</span> Get In Touch</h2>
-      <div class="contact-info">
-        <div class="contact-item">
-          <div class="contact-icon">@</div>
-          <div class="contact-details">
-            <h4>Email</h4>
-            <p>roshansoni@email.com</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">💼</div>
-          <div class="contact-details">
-            <h4>LinkedIn</h4>
-            <p>linkedin.com/in/roshansoni</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">🐙</div>
-          <div class="contact-details">
-            <h4>GitHub</h4>
-            <p>github.com/roshan-soni-1</p>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">🐦</div>
-          <div class="contact-details">
-            <h4>Twitter</h4>
-            <p>@roshan_codes</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="contact-form">
+    <h2>Get In Touch</h2>
+    <p>I'm always interested in new opportunities and collaborations. Let's discuss your project or just say hello!</p>
+    <form action="port-back.php" method="get">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="your@email.com" required />
+      <textarea placeholder="Tell me about your project or just say hello!" required></textarea>
+      <button type="submit">Send Message <span>📨</span></button>
+    </form>
+  </section>
+  
+  <section class="contact-info">
+    <h2>Let's Connect</h2>
+    <p> Whether you need a full-stack web application, 3D visualizations, or technical consultation, I'd love to hear from you.</p>
+    
+    <div class="info-item">
+      <div class="icon" style="background: #3452db;"><span>📧</span></div>
+      <div><strong>Email</strong><br>roshan.soniin@gmail.com</div>
+    </div>
+    
+    <div class="info-item">
+      <div class="icon" style="background: #0b7e5c;"><span>📍</span></div>
+      <div><strong>Location</strong><br>India (UTC+5:30)</div>
+    </div>
+  
+    <div class="info-item">
+      <div class="icon" style="background: #b95e05;"><span>⏰</span></div>
+      <div><strong>Response Time</strong><br>Usually within 24 hours</div>
+    </div>
+  
+    <div class="social-links">
+      <a href="#"><img src="/asset/icon/github.svg" alt="GitHub"></a>
+    </div>
+  </section>
   </main>
 
-  <!-- Scripts -->
-  <script>
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
 
-    // Scroll animation observer
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running';
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.section').forEach(section => observer.observe(section));
-
-    // Hover effect for projects
-    document.querySelectorAll('.project').forEach(project => {
-      project.addEventListener('mouseenter', () => project.style.transform = 'translateX(5px) scale(1.02)');
-      project.addEventListener('mouseleave', () => project.style.transform = 'translateX(0) scale(1)');
-    });
-
-    // Typing effect
-    const titles = ['Full Stack Developer', 'UI/UX Designer', 'Problem Solver', 'Creative Thinker'];
-    let currentTitle = 0, currentChar = 0, isDeleting = false;
-
-    function typeEffect() {
-      const titleElement = document.querySelector('.title');
-      const current = titles[currentTitle];
-      if (!isDeleting) {
-        titleElement.textContent = current.substring(0, currentChar + 1);
-        currentChar++;
-        if (currentChar === current.length) {
-          isDeleting = true;
-          setTimeout(typeEffect, 2000);
-          return;
-        }
-      } else {
-        titleElement.textContent = current.substring(0, currentChar - 1);
-        currentChar--;
-        if (currentChar === 0) {
-          isDeleting = false;
-          currentTitle = (currentTitle + 1) % titles.length;
-        }
-      }
-      setTimeout(typeEffect, isDeleting ? 50 : 100);
-    }
-
-    setTimeout(typeEffect, 1000);
-  </script>
 </body>
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="project.js" type="text/javascript" charset="utf-8"></script>
+  <script src="skill.js" type="text/javascript" charset="utf-8"></script>
 </html>

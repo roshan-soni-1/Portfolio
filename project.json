@@ -1,0 +1,38 @@
+[
+  {
+    "title": "studyShare",
+    "description": "A collaborative note-sharing platform built with PHP and MySQL. Features user authentication, real-time collaboration, and file attachments.",
+    "tech": ["PHP", "MySQL", "JavaScript"],
+    "link": "https://testwebsiteros.free.nf"
+  },
+  {
+    "title": "Real-Time Chat App",
+    "description": "A messaging platform using PHP and WebSockets for real-time communication with user presence indicators.",
+    "tech": ["PHP", "WebSockets", "JavaScript"],
+    "link": "#"
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "A responsive developer portfolio to showcase projects, skills with SVG progress, and contact form integration.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "#"
+  },
+  {
+    "title": "ToDo List App",
+    "description": "Simple task manager app built with PHP and MySQL to add, edit, delete, and complete tasks.",
+    "tech": ["PHP", "MySQL", "Bootstrap"],
+    "link": "#"
+  },
+  {
+    "title": "Responsive Blog UI",
+    "description": "A mobile-first blog UI layout with dark mode toggle, sticky navbar, and card-based design.",
+    "tech": ["HTML", "CSS", "JS"],
+    "link": "#"
+  },
+  {
+    "title": "Color Hex Generator",
+    "description": "Web tool that allows users to search color names and get their HEX codes with live preview.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "#"
+  }
+]
