@@ -188,11 +188,18 @@ p .bold-color4 {
 
 
 /* Projects section */
+#project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
 .project{
     background: #1a1a1a;
     border-radius: 8px;
     padding: 1.5rem;
+    margin: 0 0.5rem 1.5rem 0.5rem;
+/*
     margin-bottom: 1.5rem;
+*/
     border-left: 4px solid #4a9eff;
     transition: all 0.3s ease;
 }
@@ -244,12 +251,10 @@ p .bold-color4 {
 }
 
 /* Skills section */
-.skills-grid {
+.skills{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-
 .skill-name{
     display: flex;
     justify-content: space-between;
@@ -417,9 +422,7 @@ p .bold-color4 {
     }
     */
     
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+    
 }
 
 /* Scroll animations */
